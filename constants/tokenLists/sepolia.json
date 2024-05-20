@@ -1,0 +1,114 @@
+{
+    "name": "SoloSending",
+    "logoURI": "https://static.coingecko.com/s/thumbnail-007177f3eca19695592f0b8b0eabbdae282b54154e1be912285c9034ea6cbaf2.png",
+    "keywords": [
+        "defi"
+    ],
+    "timestamp": "2024-05-10T21:02:25.618+00:00",
+    "tokens": [
+        {
+            "chainId": 11155111,
+            "address": "0xB2e66fdEf85431B8342489981ABC832378E609C2",
+            "name": "Solo Sending Token",
+            "symbol": "SOLO",
+            "decimals": 18,
+            "logoURI": "/svgs/icon-logo.svg"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0x3637925eE8B837f85c7309e4b291Ca56A40457a4",
+            "name": "Tether USDT",
+            "symbol": "USDT",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/325/thumb/Tether.png?1696501661"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0x6F6bB5dADDB05718382A0192B65603492C939f8F",
+            "name": "USDC",
+            "symbol": "USDC",
+            "decimals": 6,
+            "logoURI": "https://assets.coingecko.com/coins/images/6319/thumb/usdc.png?1696506694"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+            "name": "WETH",
+            "symbol": "WETH",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/2518/thumb/weth.png?1696503332"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+            "name": "Wrapped BTC",
+            "symbol": "wBTC",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/14867/thumb/binance-btc_32.png?1696514532"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0xe83EbF27702244dD5997526692f03415f741b98F",
+            "name": "Dai Stablecoin",
+            "symbol": "DAI",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/9956/thumb/Badge_Dai.png?1696509996"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0xE1eC108ba9fB9B8A691848d9C5A34aA5fBaA6e23",
+            "name": "Doge Coin",
+            "symbol": "DOGE",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/37628/thumb/exOalaX3_400x400.png?1715069462"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0xB184CD1293468B3316f1fC23b54FFb12730ab1d4",
+            "name": "Ape Coin",
+            "symbol": "APE",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/14870/thumb/banana.png?1696514534"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0x6B904451abABB342D2b787C5126C6361dD815246",
+            "name": "Chainlink",
+            "symbol": "LINK",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/877/thumb/chainlink-new-logo.png?1696502009"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0x013Cb2854daAD8203C6686682f5d876e5D3de4a2",
+            "name": "Magic Token",
+            "symbol": "MAGIC",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/32898/thumb/magic_bot_logo.jpg?1699792367"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0x21313a50C8Df0c072C4D238E2c805b6E760e5731",
+            "name": "Punk",
+            "symbol": "PUNK",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/17018/thumb/Punk.png?1696516582"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0x9981D61944760a916F78F00bb42aE1d0F9ad1254",
+            "name": "Matic Token",
+            "symbol": "MATIC",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/4713/thumb/polygon.png?1698233745"
+        },
+        {
+            "chainId": 11155111,
+            "address": "0x0bc8AEE2DbecfB45E1559BD7F81905156Cf64077",
+            "name": "Wrapped BNB",
+            "symbol": "WBNB",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/14784/thumb/gs.png?1696514453"
+        }
+    ]
+}

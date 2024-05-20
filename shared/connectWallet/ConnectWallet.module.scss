@@ -1,0 +1,32 @@
+@import "@/styles/imports";
+
+.profile {
+	padding: 1rem 1.6rem;
+	border: 0.1rem solid $col-border;
+	border-radius: 0.8rem;
+	@include flex(flex-start, center);
+	position: relative;
+	cursor: pointer;
+	gap: 0.8rem;
+	.icon {
+		position: relative;
+		width: 2rem;
+		height: 2rem;
+	}
+	.profile_body{
+		position: absolute;
+		top: 4rem;
+		padding: 1rem 1.6rem;
+		left: 0;
+		border: 0.1rem solid $col-border;
+		border-radius: 0.8rem;
+		background-color: $col-secondary;
+		@extend %center;
+		width: 100%;
+	}
+	.text{
+		h3{
+			font-family: $font-700;
+		}
+	}
+}

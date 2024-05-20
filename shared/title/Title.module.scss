@@ -1,0 +1,27 @@
+@import "@/styles/imports";
+
+.title {
+	margin-bottom: 2.4rem;
+	&[data-type="small"] {
+		h1 {
+			@extend %title-30;
+			margin-bottom: 0.4rem;
+		}
+	}
+	&[data-type="medium"] {
+		h1 {
+			@extend %title-32;
+			margin-bottom: 0.4rem;
+			font-family: $font-600;
+		}
+	}
+	&[data-type="large"] {
+		h1 {
+			@extend %title-56;
+			margin-bottom: 0.4rem;
+		}
+	}
+	p {
+		color: $col-text-secondary;
+	}
+}

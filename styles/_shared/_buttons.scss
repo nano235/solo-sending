@@ -1,0 +1,36 @@
+%btn {
+	transition: $all-transition;
+	outline: none;
+	cursor: pointer;
+	@include flex(center, center);
+	font-weight: 700;
+	@extend %title-16;
+	background-color: transparent;
+	padding: 1.2rem 2.4rem;
+	font-family: $font-700;
+	&:hover {
+		transform: scale(1.01);
+		transition: $all-transition;
+	}
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+	@include screenMax("mobile") {
+		padding: 1.2rem 2.4rem;
+	}
+}
+
+%btn-primary {
+	@extend %btn;
+	border-radius: 0.8rem;
+	background: $linear-grad;
+	border: none;
+	color: $col-primary;
+}
+
+%btn-transparent {
+	@extend %btn;
+	background-color: transparent;
+	border-color: transparent;
+}

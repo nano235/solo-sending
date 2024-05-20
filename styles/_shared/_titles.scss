@@ -1,0 +1,50 @@
+%heading {
+	font-family: $font-700;
+}
+
+%title-56 {
+	@extend %heading;
+	line-height: 6.4rem;
+	font-size: 5.6rem;
+}
+
+%title-32 {
+	@extend %heading;
+	line-height: 4.5rem;
+	font-size: 3.2rem;
+}
+
+%title-30 {
+	line-height: 3.8rem;
+	font-size: 3rem;
+}
+
+%title-28 {
+	@extend %heading;
+	line-height: 3.6rem;
+	font-size: 2.8rem;
+}
+
+%title-24 {
+	@extend %heading;
+	line-height: 3.2rem;
+	font-size: 2.4rem;
+}
+
+%title-20 {
+	@extend %heading;
+	line-height: 2.4rem;
+	font-size: 2rem;
+}
+
+%title-18 {
+	@extend %heading;
+	line-height: 2.4rem;
+	font-size: 1.8rem;
+}
+
+%title-16 {
+	@extend %heading;
+	line-height: 2.4rem;
+	font-size: 1.6rem;
+}

@@ -1,0 +1,98 @@
+@import "@/styles/imports";
+
+.modal {
+	.container {
+		@extend %center;
+		margin-top: 4rem;
+		padding-inline: 8.5rem;
+		overflow: hidden;
+		.row {
+			@include flex(space-between, center);
+			width: 100%;
+			position: relative;
+			.portal {
+				position: relative;
+				width: 2.6rem;
+				height: 11.2rem;
+			}
+			.icon_container {
+				position: absolute;
+				top: calc(50% - 1.6rem);
+				opacity: 0.6;
+				z-index: 1;
+				&[data-status="speed"] {
+					animation: teleportation 0.7s ease-in-out infinite;
+					opacity: 0;
+				}
+				&[data-status="pending"] {
+					animation: teleportation 2s ease-in-out infinite;
+					opacity: 0;
+				}
+			}
+		}
+		.center {
+			@extend %center;
+			width: 100%;
+			.success_icon {
+				position: relative;
+				width: 8rem;
+				height: 8rem;
+			}
+		}
+		.text {
+			background-color: $col-secondary;
+			padding: 0.8rem 1.6rem;
+			border-radius: 0.8rem;
+			margin-top: 5.6rem;
+			p {
+				color: white;
+			}
+			span {
+				color: $col-text-secondary;
+			}
+		}
+		.button_container {
+			width: 100%;
+			margin-top: 2rem;
+			@include grid(repeat(2, 1fr), 1.6rem);
+			.button {
+				width: 100%;
+				padding: 1rem 1.6rem;
+				&:first-child {
+					background-color: $col-secondary;
+					color: $col-white;
+					border-radius: 0.8rem;
+				}
+			}
+		}
+	}
+	@include screenMax("mobile") {
+		.container {
+			padding-inline: 6rem;
+		}
+	}
+}
+
+.title {
+	text-align: center;
+}
+
+@keyframes teleportation {
+	0% {
+		rotate: 0deg;
+		left: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		rotate: 360deg;
+		left: 100%;
+	}
+}

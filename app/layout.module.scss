@@ -1,0 +1,9 @@
+@import "@/styles/imports";
+
+.main {
+	padding: 5.6rem 8rem;
+	width: 100%;
+	@include screenMax("mobile") {
+		padding: 4rem 1.6rem;
+	}
+}

@@ -1,0 +1,62 @@
+@import "@/styles/imports";
+
+.input {
+	width: 100%;
+	row-gap: 0.7rem;
+	@include flex(flex-start, flex-start, column);
+}
+
+.input_label {
+	@extend %text-14;
+	color: $col-text-secondary;
+	font-weight: 500;
+}
+
+.input_wrapper {
+	position: relative;
+	padding: 1.6rem;
+	width: 100%;
+	column-gap: 1rem;
+	background-color: #1a1d23;
+	border: 0.4rem solid $col-border;
+	border-radius: 1.6rem;
+	transition: all 0.1s ease-in;
+
+	@include flex(flex-start, center, row nowrap);
+
+	&:focus-within {
+		transition: all 0.3s linear;
+	}
+}
+
+.input_icon {
+	position: relative;
+	width: 1.6rem;
+	height: 1.6rem;
+	flex-shrink: 0;
+}
+
+.input_field {
+	all: unset;
+	flex-grow: 1;
+	height: 100%;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-family: $font;
+	color: $col-white;
+	width: 100%;
+	&::placeholder {
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		color: $col-text-secondary;
+	}
+}
+
+.icon {
+	position: relative;
+	width: 1.6rem;
+	height: 1.6rem;
+	cursor: pointer;
+	border: none !important;
+	padding: none !important;
+}

@@ -1,0 +1,92 @@
+@import "@/styles/imports";
+
+.modal {
+	.wallet_list {
+		width: 100%;
+		.wallet_list__item {
+			width: 100%;
+			padding-block: 1.6rem;
+			@include flex(flex-start, center);
+			cursor: pointer;
+			gap: 1rem;
+			&:nth-child(2) {
+				border-top: 0.1rem solid $col-border;
+			}
+			.icon {
+				position: relative;
+				width: 4rem;
+				height: 4rem;
+			}
+			h3 {
+				@extend %text-14;
+				font-family: $font-700;
+			}
+		}
+	}
+	.title {
+		text-align: center;
+	}
+	.container {
+		margin-inline: 1.6rem;
+		@extend %center;
+	}
+	.row {
+		@include flex(space-between, center);
+		margin-block: 4rem 5.6rem;
+		width: 100%;
+		.large_icon {
+			position: relative;
+			width: 8rem;
+			height: 8rem;
+		}
+		.loader {
+			width: 1.6rem;
+			height: 1.6rem;
+			border-radius: 50%;
+			display: block;
+			margin: 1.5rem auto;
+			position: relative;
+			color: #fff;
+			box-sizing: border-box;
+			animation: animloader 2s linear infinite;
+		}
+	}
+	.text,
+	.text_container {
+		p {
+			color: $col-text-secondary;
+		}
+		a {
+			color: #fff;
+			font-family: $font-700;
+		}
+	}
+	.text_container {
+		background-color: $col-secondary;
+		padding: 0.8rem 1.6rem;
+		border-radius: 0.8rem;
+	}
+}
+
+@keyframes animloader {
+	0% {
+		box-shadow: 1.4rem 0 0 -0.2rem, 3.8rem 0 0 -0.2rem, -1.4rem 0 0 -0.2rem,
+			-3.8rem 0 0 -0.2rem;
+	}
+	25% {
+		box-shadow: 1.4rem 0 0 -0.2rem, 3.8rem 0 0 -0.2rem, -1.4rem 0 0 -0.2rem,
+			-3.8rem 0 0 0.2rem;
+	}
+	50% {
+		box-shadow: 1.4rem 0 0 -0.2rem, 3.8rem 0 0 -0.2rem, -1.4rem 0 0 0.2rem,
+			-3.8rem 0 0 -0.2rem;
+	}
+	75% {
+		box-shadow: 1.4rem 0 0 0.2rem, 3.8rem 0 0 -0.2rem, -1.4rem 0 0 -0.2rem,
+			-3.8rem 0 0 -0.2rem;
+	}
+	100% {
+		box-shadow: 1.4rem 0 0 -0.2rem, 3.8rem 0 0 0.2rem, -1.4rem 0 0 -0.2rem,
+			-3.8rem 0 0 -0.2rem;
+	}
+}

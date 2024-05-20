@@ -1,0 +1,50 @@
+@import "@/styles/imports";
+
+.modal {
+	.input {
+		background-color: transparent;
+		border: 0.1rem solid $col-border;
+		padding-block: 1rem;
+		border-radius: 1rem;
+		margin-bottom: 2.4rem;
+	}
+	.loader {
+		width: 100%;
+	}
+	.token_list {
+		max-height: 50dvh;
+		@include noScrollBar;
+		overflow-x: scroll;
+		.token_item {
+			border-bottom: 0.1rem solid $col-border;
+			.button {
+				@include flex(space-between, center);
+				width: 100%;
+				padding-inline: 0;
+			}
+		}
+	}
+	.small_row {
+		@include flex(flex-start, center);
+		gap: 0.15rem;
+	}
+	.import_button {
+		padding: 0.5rem 1rem;
+		font-size: 1.2rem;
+	}
+	.row {
+		@include flex(space-between, center);
+		padding: 1.2rem;
+	}
+	.text {
+		h3 {
+			font-family: $font-700;
+			color: $col-white;
+			@extend %text-14;
+		}
+		p {
+			color: $col-text-secondary;
+			@extend %text-12;
+		}
+	}
+}

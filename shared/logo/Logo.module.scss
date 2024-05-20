@@ -1,0 +1,11 @@
+@import "@/styles/imports";
+
+.logo {
+	height: 3.2rem;
+	width: 12.8rem;
+	position: relative;
+	display: grid;
+	place-items: center;
+	transition: $all-transition;
+	flex-shrink: 0;
+}

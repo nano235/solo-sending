@@ -1,0 +1,66 @@
+@import "@/styles/imports";
+
+.container {
+	width: 100%;
+	.go_back {
+		@include flex(flex-start, center);
+		gap: 0.4rem;
+		padding: 0;
+		.chevron {
+			position: relative;
+			width: 2rem;
+			height: 2rem;
+			rotate: 90deg;
+		}
+	}
+	.table {
+		margin-top: 2rem;
+		.table_head,
+		.table_row {
+			@include flex(space-between, center);
+			padding: 0.8rem;
+			width: 100%;
+			border-radius: 1.6rem;
+			.cell {
+				padding: 0.8rem;
+				width: 22%;
+				&:nth-child(3) {
+					width: 30%;
+				}
+				.grad_box {
+					background: $linear-grad;
+					padding: 0.3rem;
+					border-radius: 0.8rem;
+				}
+			}
+		}
+		.table_row {
+			&[data-active="true"] {
+				background-color: #1a1d23;
+			}
+		}
+		.input {
+			input {
+				text-align: right;
+				font-family: $font-600;
+			}
+		}
+	}
+	.button {
+		width: 100%;
+		margin-top: 3rem;
+	}
+	.text {
+		h4 {
+			@extend %text-16;
+			font-weight: 700;
+			color: $col-text-secondary;
+		}
+		p {
+			@extend %text-14;
+			color: $col-white;
+			font-family: $font-500;
+			text-align: left;
+		}
+	}
+}
